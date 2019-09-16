@@ -27,6 +27,22 @@ namespace Coffee_shop_customer_manager
 
             MessageBox.Show (" Name: " + name + "\n" + " Contact: " + contact +"\n" +" Address: " + address +"\n" + "Item: " + item +"\n"+ "Quantity: " + quantity ) ;
 
+           
+
+            if (itemComboBox.Text == "")
+            {
+                MessageBox.Show("Select item");            
+            }
+             else {
+                MessageBox.Show(itemComboBox.Text + "is selected ");
+
+            }
+        
+
+
+
+
+
             
 
 

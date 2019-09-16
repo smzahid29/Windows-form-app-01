@@ -40,11 +40,12 @@
             this.addressTextBox = new System.Windows.Forms.TextBox();
             this.quantityTextBox = new System.Windows.Forms.TextBox();
             this.itemComboBox = new System.Windows.Forms.ComboBox();
+            this.richTextBox = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // saveButton
             // 
-            this.saveButton.Location = new System.Drawing.Point(353, 141);
+            this.saveButton.Location = new System.Drawing.Point(182, 277);
             this.saveButton.Name = "saveButton";
             this.saveButton.Size = new System.Drawing.Size(75, 23);
             this.saveButton.TabIndex = 0;
@@ -139,20 +140,29 @@
             // 
             this.itemComboBox.FormattingEnabled = true;
             this.itemComboBox.Items.AddRange(new object[] {
-            "Black-120",
-            "Cold-100",
-            "Hot-90",
-            "Regular-80"});
+            "Black",
+            "Cold",
+            "Hot",
+            "Regular"});
             this.itemComboBox.Location = new System.Drawing.Point(182, 202);
             this.itemComboBox.Name = "itemComboBox";
             this.itemComboBox.Size = new System.Drawing.Size(121, 21);
             this.itemComboBox.TabIndex = 13;
+            // 
+            // richTextBox
+            // 
+            this.richTextBox.Location = new System.Drawing.Point(376, 72);
+            this.richTextBox.Name = "richTextBox";
+            this.richTextBox.Size = new System.Drawing.Size(134, 210);
+            this.richTextBox.TabIndex = 14;
+            this.richTextBox.Text = "";
             // 
             // HomeUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(558, 346);
+            this.Controls.Add(this.richTextBox);
             this.Controls.Add(this.itemComboBox);
             this.Controls.Add(this.quantityTextBox);
             this.Controls.Add(this.addressTextBox);
@@ -188,6 +198,7 @@
         private System.Windows.Forms.TextBox addressTextBox;
         private System.Windows.Forms.TextBox quantityTextBox;
         private System.Windows.Forms.ComboBox itemComboBox;
+        private System.Windows.Forms.RichTextBox richTextBox;
     }
 }
 
